@@ -26,3 +26,7 @@
 .animation{
   @apply duration-300 ease-in-out
 }
+
+.container{
+  @apply max-w-[1200px] w-full mx-auto
+}
