@@ -21,3 +21,8 @@
     text-wrap: balance;
   }
 }
+
+
+.animation{
+  @apply duration-300 ease-in-out
+}
