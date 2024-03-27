@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { PlantImage } from "@/assets/images";
-import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import ProductCard from "./ProductCard";
+import { addCart } from "@/api/api";
+import toast from "react-hot-toast";
 
 type Props = {
   products: IProduct[];
@@ -12,6 +13,14 @@ type Props = {
 
 const Product = ({ products }: Props) => {
   const [activeElement, setActiveElement] = useState(0);
+  const addToCart =async () => {
+    const response = await addCart(products[activeElement + 1]);
+    if(response){
+      toast.success("Product added to cart")
+    }else{
+      toast.error("Failed to add product to cart")
+    }
+  }
   return (
     <div className=" h-full relative ">
       <Swiper
@@ -23,29 +32,12 @@ const Product = ({ products }: Props) => {
         onSnapIndexChange={(index) => setActiveElement(index.activeIndex)}
       >
         {products.map((product, index) => (
-          <SwiperSlide className={`h-full py-6  `} key={product.title}>
-            <div
-              className={`flex flex-col  hover:shadow-xl rounded-xl  items-center  justify-center  animation h-full`}
-            >
-              <Image
-                src={PlantImage}
-                width={300}
-                height={300}
-                // src={product.image}
-                className={` animation object-contain ${
-                  activeElement + 1 === index ? " h-[400px]" : "h-[250px]"
-                } `}
-                alt={product.title}
-              />
-              <div className=" flex flex-col items-center justify-center">
-                <div className=" font-semibold mt-4 mb-2 text-lg ">
-                  {activeElement + 1 === index ? "" : product.title}
-                </div>
-                <div className=" font-semibold bold text-lg">
-                  {activeElement + 1 === index ? "" : `$${product.price}`}
-                </div>
-              </div>
-            </div>
+          <SwiperSlide className={`h-full py-6 px-3  `}>
+            <ProductCard
+              activeElement={activeElement}
+              index={index}
+              product={product}
+            />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -57,7 +49,9 @@ const Product = ({ products }: Props) => {
             <div>${products[activeElement + 1]?.price}</div>
           </div>
           <div>
-            <button className=" bg-white rounded-3xl text-sm p-4 flex items-center"> Add to Cart</button>
+            <button onClick={addToCart} className=" bg-white rounded-3xl text-sm p-4 flex items-center">
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>

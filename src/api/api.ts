@@ -21,3 +21,20 @@ export const getCarts : () => Promise<IProduct[]> = async () => {
         return null
     }
 }
+
+export const addCart : (product: IProduct) => Promise<IProduct> = async (product) => {
+    try {
+        const response = await fetch("http://localhost:5000/cart", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(product)
+        })
+        const cart = await response.json()
+        return cart
+    } catch (error) {
+        console.log(error)
+        return null
+    }
+}
