@@ -28,10 +28,11 @@ export default function RootLayout({
                 {routes?.map((route) => (
                   <Link
                     href={route.link}
-                    className=" cursor-pointer animation bg-white bg-opacity-0 hover:bg-opacity-60 p-4 rounded-full "
+                    className=" cursor-pointer animation bg-white bg-opacity-0 hover:bg-opacity-30 p-4 rounded-full "
                     key={route.link}
                   >
                     <Image
+                      className=" "
                       width={25}
                       height={25}
                       src={route.icon}
