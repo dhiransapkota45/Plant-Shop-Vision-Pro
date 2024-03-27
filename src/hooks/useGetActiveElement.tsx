@@ -5,6 +5,7 @@ type Props = {
   length: number;
 };
 
+// Hook that returns the active element in swiper
 const useGetActiveElement = ({ length }: Props) => {
   const [activeElement, setActiveElement] = useState(0);
   useEffect(() => {

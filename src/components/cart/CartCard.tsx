@@ -8,6 +8,7 @@ type Props = {
     cart: IProduct;
 };
 
+// CartCard component that displays the cart items
 const CartCard = ({cart}: Props) => {
   const [loading, setLoading] = useState(false);
   const checkoutHandler = async () => {
@@ -24,7 +25,7 @@ const CartCard = ({cart}: Props) => {
   return (
     <div
       className=" py-3 shadow-md flex flex-col rounded-md hover:shadow-lg animation justify-center items-center  flex-wrap "
-      key={cart.title}
+      key={cart.id}
     >
       <Image
         className=" h-40 object-contain"

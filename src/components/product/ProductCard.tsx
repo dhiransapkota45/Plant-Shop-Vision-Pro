@@ -7,7 +7,7 @@ type Props = {
   index: number;
   product: IProduct;
 };
-
+// ProductCard component that displays the product card
 const ProductCard = ({ activeElement, index, product }: Props) => {
   return (
       <div

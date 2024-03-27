@@ -11,6 +11,7 @@ type Props = {
   products: IProduct[];
 };
 
+// Product component that displays the products
 const Product = ({ products }: Props) => {
   const [activeElement, setActiveElement] = useState(0);
   const addToCart =async () => {

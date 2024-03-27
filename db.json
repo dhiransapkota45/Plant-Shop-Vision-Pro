@@ -3,73 +3,53 @@
     {
       "title": "Chinese Money",
       "description": "Chinese Money is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
+      "image": "./src/assets/images/image.png",
       "price": "0.99",
       "id": "0265"
     },
     {
       "title": "Chinese Money Pro",
       "description": "Chinese Money Pro is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
+      "image": "./src/assets/images/image.png",
       "price": "1.99",
       "id": "b5d6"
     },
     {
       "title": "Chinese Money Plus",
       "description": "Chinese Money Plus is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
+      "image": "./src/assets/images/image.png",
       "price": "2.99",
       "id": "da36"
     },
     {
       "title": "Chinese Money Premium",
       "description": "Chinese Money Premium is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
+      "image": "./src/assets/images/image.png",
       "price": "3.99",
       "id": "4020"
     },
     {
       "title": "Chinese Money Ultimate",
       "description": "Chinese Money Ultimate is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
+      "image": "./src/assets/images/image.png",
       "price": "4.99",
       "id": "1563"
     },
     {
       "title": "Chinese Money Deluxe",
       "description": "Chinese Money Deluxe is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
+      "image": "./src/assets/images/image.png",
       "price": "5.99",
       "id": "975e"
-    },
-    {
-      "title": "Chinese Money Gold",
-      "description": "Chinese Money Gold is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
-      "price": "6.99",
-      "id": "611a"
-    },
-    {
-      "title": "Chinese Money Platinum",
-      "description": "Chinese Money Platinum is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
-      "price": "7.99",
-      "id": "17f8"
-    },
-    {
-      "title": "Chinese Money Diamond",
-      "description": "Chinese Money Diamond is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
-      "price": "8.99",
-      "id": "8abf"
-    },
-    {
-      "title": "Chinese Money Titanium",
-      "description": "Chinese Money Titanium is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "https://w7.pngwing.com/pngs/895/199/png-transparent-spider-man-heroes-download-with-transparent-background-free-thumbnail.png",
-      "price": "9.99",
-      "id": "4903"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "b5d6",
+      "title": "Chinese Money Pro",
+      "description": "Chinese Money Pro is a simple app that helps you convert between Chinese Yuan and other currencies.",
+      "image": "./src/assets/images/image.png",
+      "price": "1.99"
+    }
+  ]
 }

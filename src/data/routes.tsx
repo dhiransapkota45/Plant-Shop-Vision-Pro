@@ -1,5 +1,6 @@
 import { CartIcon, FlowerIcon, HomeIcon, SettingIcon } from "@/assets/icons";
 
+// Routes for the application
 export const routes = [
     {
         title:"home",

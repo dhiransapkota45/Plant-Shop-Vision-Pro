@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  // for animation while component mounts
   const [animate, setAnimate] = useState(false)
   useEffect(()=>{
     setAnimate(true)

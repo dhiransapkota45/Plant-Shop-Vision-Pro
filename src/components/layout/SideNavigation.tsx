@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 
 type Props = {};
 
+// SideNavigation component that displays the navigation links
 const SideNavigation = (props: Props) => {
     const pathname = usePathname();
     return (

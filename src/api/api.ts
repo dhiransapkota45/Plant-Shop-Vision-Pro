@@ -1,5 +1,6 @@
 "use server"
 
+// these apis are used to fetch data from the server
 export const getProducts : () => Promise<IProduct[]> = async () => {
     try {
         const response = await fetch("http://localhost:5000/products")
