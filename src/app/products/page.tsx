@@ -1,9 +1,15 @@
-import React from 'react'
+import { getProducts } from "@/api/api";
+import Product from "@/components/product/Product";
+import React from "react";
 
-const page = () => {
+const page = async () => {
+  const products = await getProducts();
+
   return (
-    <div>Products</div>
-  )
-}
+    <div className=" h-full">
+      {products?.length>0 && <Product products={products} />}
+    </div>
+  );
+};
 
-export default page
+export default page;

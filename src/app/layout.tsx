@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="bg-cover bg-no-repeat bg-[url('../assets/images/background.jpg')]">
-          <div className=" container flex gap-10 justify-center items-center h-screen w-full ">
+          <div className="  container flex gap-10  justify-center items-center h-screen w-full ">
             <div className="flex gap-4 shrink-0 backdrop-blur-lg bg-white bg-opacity-40 px-3 py-8 rounded-full flex-col ">
               {routes?.map((route) => (
                 <Link
@@ -38,7 +38,7 @@ export default function RootLayout({
                 </Link>
               ))}
             </div>
-            <div className=" text-white h-[700px]   flex-1 w-full p-4  bg-white  rounded-xl bg-opacity-20  backdrop-blur-lg">
+            <div className="  text-white max-h-[700px] h-full w-[700px]  shrink-0 flex-1    bg-white  rounded-2xl bg-opacity-40  backdrop-blur-lg">
               {children}
             </div>
           </div>
