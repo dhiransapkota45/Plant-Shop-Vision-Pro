@@ -1,45 +1,10 @@
 "use client";
-import { PlantImage } from "@/assets/images";
-import { Plus } from "lucide";
-import Image from "next/image";
-// import React from "react";
-// import Slider from "../common/Slider";
-// import useGetActiveElement from "@/hooks/useGetActiveElement";
-// import { Plus } from "lucide";
-
-// type Props = {
-//   products: IProduct[];
-// };
-
-// const Product = ({ products }: Props) => {
-//   const { activeElement } = useGetActiveElement({ length: products.length });
-//   return (
-//     <div className="h-full ">
-//       <Slider activeElement={activeElement} products={products} />
-//       <div className="   w-full absolute h-24 -bottom-12  z-10 flex justify-center">
-//         <div className=" w-[420px]  text-black font-semibold text-lg rounded-full flex justify-evenly items-center bg-white bg-opacity-70 backdrop-blur-xl">
-//           <div className=" flex  flex-col">
-//             <div>{products[activeElement + 1]?.title}</div>
-//             <div>${products[activeElement + 1]?.price}</div>
-//           </div>
-//           <div>
-//             <button className=" bg-white rounded-3xl p-3">
-//               Add to Cart
-//               </button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Product;
-
 import React, { useState } from "react";
-
-import "swiper/css";
+import { PlantImage } from "@/assets/images";
+import Image from "next/image";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
 type Props = {
   products: IProduct[];
