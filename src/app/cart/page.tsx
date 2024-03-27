@@ -1,11 +1,11 @@
-import React from 'react'
+import { getCarts } from "@/api/api";
+import Cart from "@/components/cart/Cart";
+import React from "react";
 
-const page = () => {
-  return (
-    <div>
-      Hi
-    </div>
-  )
-}
+const page = async () => {
+  const carts = await getCarts();
 
-export default page
+  if (carts) return <Cart carts={carts} />;
+};
+
+export default page;

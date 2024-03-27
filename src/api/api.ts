@@ -13,7 +13,7 @@ export const getProducts : () => Promise<IProduct[]> = async () => {
 
 export const getCarts : () => Promise<IProduct[]> = async () => {
     try {
-        const response = await fetch("http://localhost:5000/carts")
+        const response = await fetch("http://localhost:5000/cart")
         const carts = await response.json()
         return carts
     } catch (error) {
@@ -30,6 +30,20 @@ export const addCart : (product: IProduct) => Promise<IProduct> = async (product
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(product)
+        })
+        const cart = await response.json()
+        return cart
+    } catch (error) {
+        console.log(error)
+        return null
+    }
+}
+
+
+export const removeCart : (id: string) => Promise<IProduct> = async (id) => {
+    try {
+        const response = await fetch(`http://localhost:5000/cart/${id}`, {
+            method: "DELETE"
         })
         const cart = await response.json()
         return cart
