@@ -1,5 +1,4 @@
 "use client"
-import { PlantImage } from "@/assets/images";
 import Image from "next/image";
 
 type Props = {
@@ -14,7 +13,7 @@ const ProductCard = ({ activeElement, index, product }: Props) => {
         className={`flex flex-col  hover:shadow-xl rounded-xl  items-center  justify-center  animation h-full`}
       >
         <Image
-          src={PlantImage}
+          src={product?.image}
           width={300}
           height={300}
           className={` animation object-contain ${

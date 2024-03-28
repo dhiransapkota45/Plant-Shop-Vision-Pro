@@ -12,7 +12,7 @@ const Cart = ({ carts }: Props) => {
     <div className="p-6 grid md:grid-cols-3 lg:grid-cols-3 gap-3 overflow-auto  h-full ">
       {carts.length > 0 ? (
         carts.map((cart) => {
-          return <CartCard cart={cart} />;
+          return <CartCard key={cart.id} cart={cart} />;
         })
       ) : (
         <div className=" col-span-3 font-semibold text-lg h-full flex justify-center items-center w-full">

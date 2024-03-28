@@ -33,10 +33,6 @@ const Product = ({ products }: Props) => {
         centeredSlides={true}
         className=" h-full"
         autoplay={true}
-        // slidesPerView={
-        //   products.length > 3 ? 3 : products.length > 1 ? products.length : 1
-        // }
-
         breakpoints={{
           768: {
             slidesPerView: 1,
@@ -53,7 +49,7 @@ const Product = ({ products }: Props) => {
         onSnapIndexChange={(index) => setActiveElement(index.activeIndex)}
       >
         {products.map((product, index) => (
-          <SwiperSlide className={`h-full py-6 px-3  `}>
+          <SwiperSlide key={product.id} className={`h-full py-6 px-3  `}>
             <ProductCard
               activeElement={activeElement}
               index={index}
