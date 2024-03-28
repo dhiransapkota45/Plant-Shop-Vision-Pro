@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { routes } from "@/data/routes";
-import Image from "next/image";
-import Link from "next/link";
+import ToasterProvider from "@/providers/ToasterProvider";
+import SideNavigation from "@/components/layout/SideNavigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,27 +12,25 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  context,
   children,
 }: Readonly<{
+  context: any;
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" flex gap-10 justify-center items-center h-screen w-full bg-cover bg-no-repeat bg-[url('../assets/images/background.jpg')] ">
-          <div className="flex gap-4 backdrop-blur-lg bg-white bg-opacity-40 px-3 py-8 rounded-full flex-col ">
-            {
-              routes?.map((route)=>(
-                <Link href={route.link} className=" cursor-pointer animation bg-white bg-opacity-0 hover:bg-opacity-60 p-4 rounded-full " key={route.link}>
-                  <Image width={30} height={30} src={route.icon} alt={route.title}  />
-                </Link>
-              ))
-            }
+        <ToasterProvider>
+          <div className="bg-cover bg-no-repeat bg-[url('../assets/images/background.jpg')]">
+            <div className="  container flex flex-col md:flex-row gap-10  justify-center items-center h-screen w-full ">
+              <SideNavigation />
+              <div className="  text-white max-h-[700px] h-full md:w-[640px] w-full  shrink-0 flex-1    bg-white  rounded-2xl bg-opacity-40  backdrop-blur-lg">
+                {children}
+              </div>
+            </div>
           </div>
-          <div className=" text-white h-[700px]  max-w-[900px] w-full p-4  bg-white  rounded-xl bg-opacity-20  backdrop-blur-lg">
-            {children}
-          </div>
-        </div>
+        </ToasterProvider>
       </body>
     </html>
   );

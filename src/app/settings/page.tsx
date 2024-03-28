@@ -1,8 +1,9 @@
 import React from 'react'
 
+//static settings page content
 const page = () => {
   return (
-    <div>page</div>
+    <div className=' font-semibold text-xl flex justify-center items-center h-full'>Setting Page Content Here</div>
   )
 }
 

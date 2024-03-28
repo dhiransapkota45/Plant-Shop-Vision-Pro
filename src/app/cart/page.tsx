@@ -1,9 +1,12 @@
-import React from 'react'
+import { getCarts } from "@/api/api";
+import Cart from "@/components/cart/Cart";
+import React from "react";
 
-const page = () => {
-  return (
-    <div>Cart</div>
-  )
-}
+//cart data is fetched from the api and passed to the Cart component
+const page = async () => {
+  const carts = await getCarts();
 
-export default page
+  if (carts) return <Cart carts={carts} />;
+};
+
+export default page;
