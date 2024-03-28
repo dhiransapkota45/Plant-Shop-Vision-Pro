@@ -30,7 +30,7 @@ const CartCard = ({cart}: Props) => {
     }, 2000);
     const response =  await removeCart(cart.id);
     if(response){
-        toast.success("Checkout Successful")
+        toast.success("Remove Successful")
     }
     setDeleteLoading(false);
   };
