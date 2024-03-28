@@ -1,55 +1,40 @@
 {
   "products": [
     {
-      "title": "Chinese Money",
+      "title": "Alder",
       "description": "Chinese Money is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
+      "image": "/images/image.png",
       "price": "0.99",
       "id": "0265"
     },
     {
-      "title": "Chinese Money Pro",
+      "title": "Almond",
       "description": "Chinese Money Pro is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
+      "image": "/images/image1.png",
       "price": "1.99",
       "id": "b5d6"
     },
     {
-      "title": "Chinese Money Plus",
+      "title": "Aloe vera ",
       "description": "Chinese Money Plus is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
+      "image": "/images/image2.png",
       "price": "2.99",
       "id": "da36"
     },
     {
-      "title": "Chinese Money Premium",
+      "title": "Amaranth",
       "description": "Chinese Money Premium is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
+      "image": "/images/image3.png",
       "price": "3.99",
       "id": "4020"
     },
     {
-      "title": "Chinese Money Ultimate",
+      "title": "Ambrosia",
       "description": "Chinese Money Ultimate is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
+      "image": "/images/image4.png",
       "price": "4.99",
       "id": "1563"
-    },
-    {
-      "title": "Chinese Money Deluxe",
-      "description": "Chinese Money Deluxe is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
-      "price": "5.99",
-      "id": "975e"
     }
   ],
-  "cart": [
-    {
-      "id": "0265",
-      "title": "Chinese Money",
-      "description": "Chinese Money is a simple app that helps you convert between Chinese Yuan and other currencies.",
-      "image": "./src/assets/images/image.png",
-      "price": "0.99"
-    }
-  ]
+  "cart": []
 }
