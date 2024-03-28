@@ -1,5 +1,7 @@
 "use server";
 
+import { revalidatePath } from "next/cache";
+
 // these apis are used to fetch data from the server
 export const getProducts: () => Promise<IProduct[]> = async () => {
   try {
@@ -41,6 +43,7 @@ export const addCart: (product: IProduct) => Promise<IProduct | string> = async 
       body: JSON.stringify(product),
     });
     const cart = await response.json();
+    revalidatePath("/cart");
     return cart;
   } catch (error) {
     console.log(error);
@@ -54,6 +57,7 @@ export const removeCart: (id: string) => Promise<IProduct> = async (id) => {
       method: "DELETE",
     });
     const cart = await response.json();
+    revalidatePath("/cart");
     return cart;
   } catch (error) {
     console.log(error);

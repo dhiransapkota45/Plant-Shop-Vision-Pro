@@ -4,7 +4,7 @@ import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import ProductCard from "./ProductCard";
-import { addCart, getCarts } from "@/api/api";
+import { addCart } from "@/api/api";
 import toast from "react-hot-toast";
 
 type Props = {
