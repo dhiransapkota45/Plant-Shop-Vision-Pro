@@ -18,16 +18,16 @@ const ProductCard = ({ activeElement, index, product }: Props) => {
           width={300}
           height={300}
           className={` animation object-contain ${
-            activeElement + 1 === index ? " h-[400px]" : "h-[250px]"
+            activeElement === index ? " h-[400px]" : "h-[250px]"
           } `}
           alt={product.title}
         />
         <div className=" flex flex-col items-center justify-center">
           <div className=" font-semibold mt-4 mb-2 text-lg ">
-            {activeElement + 1 === index ? "" : product.title}
+            {activeElement === index ? "" : product.title}
           </div>
           <div className=" font-semibold bold text-lg">
-            {activeElement + 1 === index ? "" : `$${product.price}`}
+            {activeElement === index ? "" : `$${product.price}`}
           </div>
         </div>
       </div>

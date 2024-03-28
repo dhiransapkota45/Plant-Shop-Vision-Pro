@@ -23,9 +23,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <ToasterProvider>
           <div className="bg-cover bg-no-repeat bg-[url('../assets/images/background.jpg')]">
-            <div className="  container flex gap-10  justify-center items-center h-screen w-full ">
+            <div className="  container flex flex-col md:flex-row gap-10  justify-center items-center h-screen w-full ">
               <SideNavigation />
-              <div className="  text-white max-h-[700px] h-full w-[700px]  shrink-0 flex-1    bg-white  rounded-2xl bg-opacity-40  backdrop-blur-lg">
+              <div className="  text-white max-h-[700px] h-full md:w-[640px] w-full  shrink-0 flex-1    bg-white  rounded-2xl bg-opacity-40  backdrop-blur-lg">
                 {children}
               </div>
             </div>

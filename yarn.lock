@@ -1972,11 +1972,6 @@ lru-cache@^6.0.0:
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-10.2.0.tgz#0bd445ca57363465900f4d1f9bd8db343a4d95c3"
   integrity sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==
 
-lucide@^0.363.0:
-  version "0.363.0"
-  resolved "https://registry.yarnpkg.com/lucide/-/lucide-0.363.0.tgz#fbfa5d60a13cc10c032f0864b138c87411e3368f"
-  integrity sha512-/AAsZdclXMOn4Q3wWw6kcyYHzwyafoRyEOCD9bVlhRTU5rxJ3Gs2Hj70xwOhK2z14Iukmon6dTvgzhkoj21YZg==
-
 merge2@^1.3.0, merge2@^1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/merge2/-/merge2-1.4.1.tgz#4368892f885e907455a6fd7dc55c0c9d404990ae"

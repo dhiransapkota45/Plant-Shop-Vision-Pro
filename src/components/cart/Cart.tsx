@@ -9,7 +9,7 @@ type Props = {
 // Cart component that displays the cart items
 const Cart = ({ carts }: Props) => {
   return (
-    <div className="p-6 grid grid-cols-3 gap-3 overflow-auto  h-full ">
+    <div className="p-6 grid md:grid-cols-3 lg:grid-cols-3 gap-3 overflow-auto  h-full ">
       {carts.length > 0 ? (
         carts.map((cart) => {
           return <CartCard cart={cart} />;

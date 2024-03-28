@@ -12,10 +12,10 @@ export default function Home() {
   }, [])
   return (
     <div className={`${animate ? "scale-100" : "scale-90"} animation flex font-semibold flex-col gap-y-7 justify-center items-center h-full`}>
-      <div className="  text-3xl">
+      <div className="  text-center text-3xl">
         Welcome to Apple Vision Pro: Experience the Future of Sight
       </div>
-      <div className=" max-w-[550px] text-lg text-center">
+      <div className=" px-2 max-w-[550px] text-lg text-center">
         Unlock a world of possibilities with Apple Vision Pro. Explore
         groundbreaking features designed to enhance your vision and empower your
         independence.

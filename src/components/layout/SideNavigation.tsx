@@ -11,7 +11,7 @@ type Props = {};
 const SideNavigation = (props: Props) => {
     const pathname = usePathname();
     return (
-    <div className="md:flex hidden gap-4 shrink-0 backdrop-blur-lg bg-white bg-opacity-40 px-3 py-8 rounded-full flex-col ">
+    <div className="flex  gap-4 shrink-0 backdrop-blur-lg bg-white bg-opacity-40 px-3 py-2 md:py-8 rounded-full md:flex-col ">
       {routes?.map((route) => (
         <Link
           href={route.link}
